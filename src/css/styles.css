@@ -15,7 +15,7 @@ html {
 
 body {
   align-items: center;
-  background-color: #ffffff;
+  background-color: #cccae3;
   color: black;
   display: flex;
   font-family: 'Montserrat', sans-serif;
@@ -31,4 +31,127 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.player-container {
+  background: #e5e5e5;
+  border-radius: 2rem;
+  box-shadow: 0 1.5rem 3rem 0.5rem rgba(0, 0, 0, 0.3);
+  height: 50rem;
+  width: 40rem;
+}
+
+.img-container {
+  position: relative;
+  top: -50px;
+  left: 50px;
+  height: 30rem;
+  width: 30rem;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+  box-shadow: 0 0.5rem 3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+
+/* Progress */
+.progress-container {
+  background: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 90%;
+}
+
+.progress {
+  background: #242323;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Controls */
+.player-controls {
+  position: relative;
+  top: -15px;
+  left: 120px;
+  width: 200px;
+}
+
+.fa-solid {
+  font-size: 30px;
+  color: rgb(129, 129, 129);
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+  filter: drop-shadow(0 0.4rem 0.3rem rgba(0, 0, 0, 0.8));
+}
+
+.fa-solid:hover {
+  filter: drop-shadow(0 0.4rem 0.3rem rgba(0, 0, 0, 0.8)) brightness(80%)
+}
+
+.fa-solid:active {
+  filter: drop-shadow(0 0rem 0.4rem rgba(0, 0, 0, 0.3)) brightness(80%);
+  transform: translateY(0.4rem);
+}
+
+
+
+.main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+
+  .player-container {
+    width: 95vw;
+  }
+
+
+  .img-container {
+    left: 29px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+    top: -10px;
+    left: 100px;
+  }
 }

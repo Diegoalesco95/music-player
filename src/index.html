@@ -12,9 +12,35 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="css/styles.css" />
-		<title>Template</title>
+		<title>Music Player</title>
 	</head>
 	<body>
+		<div class="player-container">
+			<div class="img-container">
+				<img src="./assets/images/jacinto-1.jpg" alt="Album Art" />
+			</div>
+			<h2 id="title">Electric Chill Machine</h2>
+			<h3 id="artist">Jacinto</h3>
+			<audio src="./assets/audio/jacinto-1.mp3"></audio>
+
+			<div class="progress-container" id="progress-container">
+				<div class="progress" id="progress"></div>
+				<div class="duration-wrapper">
+					<span id="current-time">0:00</span>
+					<span id="duration">0:00</span>
+				</div>
+			</div>
+
+			<div class="player-controls">
+				<i
+					class="fa-solid fa-backward-fast"
+					id="prev"
+					title="Previous"
+				></i>
+				<i class="fa-solid fa-play main-button" id="play"></i>
+				<i class="fa-solid fa-forward-fast" id="next" title="Next"></i>
+			</div>
+		</div>
 		<script src="index.js"></script>
 	</body>
 </html>
